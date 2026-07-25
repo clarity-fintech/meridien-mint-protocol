@@ -1,0 +1,177 @@
+// Moniversive Invariant Static (MIS) — deep root
+// Creator: Chandler William Ferguson
+// Letter-hash + EMBED gates 3..=6 · settlement clrty-1 / chain 1202
+// Compile: bin/misc <file>.mis --check --compact-letters
+// Title: Meridien Mint Protocol · NativeUsdc
+// Suite: Cross-Chain Bridges & Interoperability
+
+module MeridienMintProtocolNativeUsdc {
+
+  embed gates 3..=6 {
+    context: "NativeUsdc pack — meridien_mint cross-chain on CLRTY-1";
+    ai: "Index via mis_code_index + moniversive_invariant_static_ML";
+    execution: "assert_pack; assert_each; settle_clrty1";
+    capital: "Settlement clrty-1 / chain 1202 · Creator Chandler William Ferguson";
+  }
+
+  invariant letter_hash_bound: letter_hash_root != @0;
+  invariant embed_gates_present: embed_root != @0;
+  invariant deep_root_moniversive: deep_root == moniversive;
+  invariant settlement_chain: chain_id == 1202;
+  invariant settlement_network_clrty1: settlement_network == clrty_1;
+  invariant kernel_is_misc: compiler_kernel == misc;
+  invariant pack_native_usdc_bound: pack_bound == true;
+  invariant catalog_backlink: mis_catalog_bound == true;
+
+  invariant native_usdc_021: native_usdc_021_bound == true;
+  invariant native_usdc_022: native_usdc_022_bound == true;
+  invariant native_usdc_023: native_usdc_023_bound == true;
+  invariant native_usdc_024: native_usdc_024_bound == true;
+  invariant native_usdc_025: native_usdc_025_bound == true;
+  invariant native_usdc_026: native_usdc_026_bound == true;
+  invariant native_usdc_027: native_usdc_027_bound == true;
+  invariant native_usdc_028: native_usdc_028_bound == true;
+  invariant native_usdc_029: native_usdc_029_bound == true;
+  invariant native_usdc_030: native_usdc_030_bound == true;
+  invariant native_usdc_031: native_usdc_031_bound == true;
+  invariant native_usdc_032: native_usdc_032_bound == true;
+  invariant native_usdc_033: native_usdc_033_bound == true;
+  invariant native_usdc_034: native_usdc_034_bound == true;
+  invariant native_usdc_035: native_usdc_035_bound == true;
+  invariant native_usdc_036: native_usdc_036_bound == true;
+  invariant native_usdc_037: native_usdc_037_bound == true;
+  invariant native_usdc_038: native_usdc_038_bound == true;
+  invariant native_usdc_039: native_usdc_039_bound == true;
+  invariant native_usdc_040: native_usdc_040_bound == true;
+
+  outcome assert_pack(payload: Bytes) {
+    require payload != @0;
+    constraint pack_bound == true;
+  }
+
+  outcome settle_clrty1(intent: Bytes) {
+    require intent != @0;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_native_usdc_021(payload: Bytes) {
+    require payload != @0;
+    constraint native_usdc_021_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_native_usdc_022(payload: Bytes) {
+    require payload != @0;
+    constraint native_usdc_022_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_native_usdc_023(payload: Bytes) {
+    require payload != @0;
+    constraint native_usdc_023_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_native_usdc_024(payload: Bytes) {
+    require payload != @0;
+    constraint native_usdc_024_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_native_usdc_025(payload: Bytes) {
+    require payload != @0;
+    constraint native_usdc_025_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_native_usdc_026(payload: Bytes) {
+    require payload != @0;
+    constraint native_usdc_026_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_native_usdc_027(payload: Bytes) {
+    require payload != @0;
+    constraint native_usdc_027_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_native_usdc_028(payload: Bytes) {
+    require payload != @0;
+    constraint native_usdc_028_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_native_usdc_029(payload: Bytes) {
+    require payload != @0;
+    constraint native_usdc_029_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_native_usdc_030(payload: Bytes) {
+    require payload != @0;
+    constraint native_usdc_030_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_native_usdc_031(payload: Bytes) {
+    require payload != @0;
+    constraint native_usdc_031_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_native_usdc_032(payload: Bytes) {
+    require payload != @0;
+    constraint native_usdc_032_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_native_usdc_033(payload: Bytes) {
+    require payload != @0;
+    constraint native_usdc_033_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_native_usdc_034(payload: Bytes) {
+    require payload != @0;
+    constraint native_usdc_034_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_native_usdc_035(payload: Bytes) {
+    require payload != @0;
+    constraint native_usdc_035_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_native_usdc_036(payload: Bytes) {
+    require payload != @0;
+    constraint native_usdc_036_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_native_usdc_037(payload: Bytes) {
+    require payload != @0;
+    constraint native_usdc_037_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_native_usdc_038(payload: Bytes) {
+    require payload != @0;
+    constraint native_usdc_038_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_native_usdc_039(payload: Bytes) {
+    require payload != @0;
+    constraint native_usdc_039_bound == true;
+    constraint chain_id == 1202;
+  }
+
+  outcome assert_native_usdc_040(payload: Bytes) {
+    require payload != @0;
+    constraint native_usdc_040_bound == true;
+    constraint chain_id == 1202;
+  }
+
+}

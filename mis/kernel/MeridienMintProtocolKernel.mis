@@ -1,0 +1,59 @@
+// Moniversive Invariant Static (MIS) — deep root
+// Creator: Chandler William Ferguson
+// Letter-hash + EMBED gates 3..=6 · settlement clrty-1 / chain 1202
+// Compile: bin/misc <file>.mis --check --compact-letters
+// Title: Meridien Mint Protocol Kernel
+// Suite: Cross-Chain Bridges & Interoperability
+
+module MeridienMintProtocolKernel {
+
+  embed gates 3..=6 {
+    context: "Meridien Mint Protocol cross-chain MIS on CLRTY-1 — PQC / edge / bridge bind";
+    ai: "Backlink mis_code_index + static ML + ecosystem + helix/payment rails";
+    execution: "assert_kernel_misc; letter_hash; pack_dispatch; settle_clrty1";
+    capital: "Settlement clrty-1 / chain 1202 · Creator Chandler William Ferguson";
+  }
+
+  invariant letter_hash_bound: letter_hash_root != @0;
+  invariant embed_gates_present: embed_root != @0;
+  invariant deep_root_moniversive: deep_root == moniversive;
+  invariant settlement_chain: chain_id == 1202;
+  invariant settlement_network_clrty1: settlement_network == clrty_1;
+  invariant extension_mis: source_extension == mis;
+  invariant kernel_is_misc: compiler_kernel == misc;
+  invariant active_kernel_only: active_kernel == misc;
+  invariant no_foreign_kernel: foreign_kernel_active == false;
+  invariant creator_bound: creator == chandler_william_ferguson;
+  invariant domain_bound: domain == meridien_mint;
+  invariant clrty1_architecture_bound: clrty1_architecture_bound == true;
+  invariant cross_chain_suite_bound: cross_chain_suite_bound == true;
+  invariant ecosystem_catalog_bound: ecosystem_catalog_bound == true;
+
+  invariant pack_cctp_burn_mint_flag: pack_cctp_burn_mint_bound == true;
+  invariant pack_native_usdc_flag: pack_native_usdc_bound == true;
+  invariant pack_pqc_settle_flag: pack_pqc_settle_bound == true;
+  invariant pack_worker_consensus_flag: pack_worker_consensus_bound == true;
+  invariant pack_clrty1_usdc_flag: pack_clrty1_usdc_bound == true;
+
+  outcome assert_kernel_misc() {
+    constraint compiler_kernel == misc;
+    constraint active_kernel == misc;
+  }
+
+  outcome letter_hash(source: Bytes) {
+    require source != @0;
+    constraint letter_root != @0;
+  }
+
+  outcome pack_dispatch(pack_id: Bytes, payload: Bytes) {
+    require pack_id != @0;
+    require payload != @0;
+    constraint pack_executed == true;
+  }
+
+  outcome settle_clrty1(intent: Bytes) {
+    require intent != @0;
+    constraint chain_id == 1202;
+    constraint settlement_network == clrty_1;
+  }
+}
