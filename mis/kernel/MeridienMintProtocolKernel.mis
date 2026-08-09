@@ -1,21 +1,11 @@
 // Moniversive Invariant Static (MIS) — deep root
 // Creator: Chandler William Ferguson
-// Letter-hash + EMBED gates 3..=6 · settlement clrty-1 / chain 1202
 // Compile: bin/misc <file>.mis --check --compact-letters
 // Title: Meridien Mint Protocol Kernel
 // Suite: Cross-Chain Bridges & Interoperability
 
 module MeridienMintProtocolKernel {
-
-  embed gates 3..=6 {
-    context: "Meridien Mint Protocol cross-chain MIS on CLRTY-1 — PQC / edge / bridge bind";
-    ai: "Backlink mis_code_index + static ML + ecosystem + helix/payment rails";
-    execution: "assert_kernel_misc; letter_hash; pack_dispatch; settle_clrty1";
-    capital: "Settlement clrty-1 / chain 1202 · Creator Chandler William Ferguson";
-  }
-
   invariant letter_hash_bound: letter_hash_root != @0;
-  invariant embed_gates_present: embed_root != @0;
   invariant deep_root_moniversive: deep_root == moniversive;
   invariant settlement_chain: chain_id == 1202;
   invariant settlement_network_clrty1: settlement_network == clrty_1;

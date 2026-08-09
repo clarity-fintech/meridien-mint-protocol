@@ -1,0 +1,14 @@
+{
+  "schema": "clrty.beacon_meta/v1",
+  "updated_at": "2026-07-29T03:15:03Z",
+  "repo_slug": "meridien-mint-protocol",
+  "beacon_id": "clrty-meridien-mint-protocol",
+  "node_name": "CLRTY-MERIDIEN-MINT-PROTOCOL",
+  "github": "https://github.com/clarity-fintech/meridien-mint-protocol",
+  "superstructure_root": "/Users/william/$CLRTY_PROJECT",
+  "superstructure_link": "../../../CLRTY_SUBSTRATE/boot/clrty_superstructure.json",
+  "symlinks": {
+    "clrty_superstructure.json": "../../../CLRTY_SUBSTRATE/boot/clrty_superstructure.json"
+  },
+  "framework_twin": "moniversive/framework/beacons/meridien-mint-protocol.mis"
+}
